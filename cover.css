@@ -8,11 +8,18 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@-moz-keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
-
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 html {
   animation: 1s fadein;
@@ -45,7 +52,8 @@ html {
   font-weight: normal;
   font-style: normal;
 }
- 
+
+
 .demo-icon a:hover {
   color: white;
   text-decoration: none;
@@ -219,6 +227,19 @@ body {
   padding: 30px;
 }
 
+.text-sm-center {
+  font-size: 12.5px;
+}
+.inner {
+  padding-bottom: 10px;
+}
+
+p.lead {
+  margin-bottom: 2.5rem;
+}
+h1 {
+  margin-bottom: 1.5rem;
+}
 
 /*
  * Header
@@ -321,3 +342,22 @@ body {
     width: 750px;
   }
 }
+
+@media (max-width: 767px) {
+  .nav {
+    display: block;
+  }
+  #navtitle {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+  h1 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+
+
