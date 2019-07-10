@@ -4,6 +4,36 @@
 
 /* More CSS */
 
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-moz-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+
+html {
+  animation: 1s fadein;
+}
+
+
+
+
+/* Main page div */
+
+.img-fluid {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.page-div {
+  width: 700px;
+  height: auto;
+  vertical-align: middle;
+}
+
 
 @font-face {
   font-family: 'fontello';
@@ -22,7 +52,7 @@
 }
 
 .demo-icon a {
-  color: grey;
+  color: rgba(255,255,255,.75);
 }
 
 .demo-icon {
@@ -76,18 +106,29 @@
   text-decoration: none;
 }
 h3 a {
-  color: #a9a9a9;
+  color: rgba(255,255,255,.75);
 }
 h3 a:hover {
   text-decoration: none;
   color: white;
 }
+
 a {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
+
+p a {
+  border-bottom: 1px solid transparent;
+}
+p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+
 
 .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
   background-color: transparent;
@@ -126,13 +167,16 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
+.btn-default {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: rgba(255,255,255,.75);
+}
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: rgba(255,255,255);
 }
 
 
@@ -147,7 +191,7 @@ body {
   margin: 0;
 }
 body {
-  color: #fff;
+  color: rgba(255,255,255,.75);
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -274,6 +318,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 750px;
   }
 }
