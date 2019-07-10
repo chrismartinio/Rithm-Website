@@ -4,8 +4,118 @@
 
 /* More CSS */
 
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?99400340');
+  src: url('./font/fontello.eot?99400340#iefix') format('embedded-opentype'),
+       url('./font/fontello.woff?99400340') format('woff'),
+       url('./font/fontello.ttf?99400340') format('truetype'),
+       url('./font/fontello.svg?99400340#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+.demo-icon a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.demo-icon a {
+  color: grey;
+}
+
+.demo-icon {
+  color: grey;
+  font-size: 3rem;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+#navtitle {
+  height: 40px;
+}
+
+#navtitle .masthead-brand a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px #a9a9a9;
+} 
+
+#navtitle .masthead-brand a:active {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+h3 a {
+  color: #a9a9a9;
+}
+h3 a:hover {
+  text-decoration: none;
+  color: white;
+}
+a {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 /* Links */
@@ -84,7 +194,6 @@ body {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
-  font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
