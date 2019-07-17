@@ -13,12 +13,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Chris Martin</title>
+    <title>Chris Martin | Meme Generator</title>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -50,8 +51,8 @@
               <h3 class="masthead-brand" id="navtitle"><a href="index.html">Chris Martin</a></h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                  <li class="active"><a href="projects.html">Projects</a></li>
                   <li><a href="vibetribe.html">Vibe Tribe</a></li>
                 </ul>
               </nav>
@@ -59,17 +60,37 @@
           </div>
 
           <div class="inner cover">
-              <h1 class="cover-heading">Hey</h1>
-              <p class="lead">Here you can find more information about our ongoing projects and events.</p>
-              <p class="lead">
-                <a href="about.html" class="btn btn-lg btn-default">Get started</a>
-              </p>
+              <div class="container">
+                <h2>Meme Generator</h3>
+                <div id="square">
+                    <form id="meme">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" class="form-control" id="imgurl" placeholder="Image URL">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="toptext" placeholder="Top text">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="bottomtext" placeholder="Bottom text">
+                    </div>
+                  </div>
+                  <button style="margin-top: 15px;" type="submit" class="btn btn-md btn-default">Get memed</button>
+                  <i class="demo-icon icon-github-circled-1" style="float:right; margin-top: 10px;"><a target="_blank" href="https://github.com/kayjitsu/Rithm-Website">&#xf300;</a></i>
+                </form>
+                <hr class="standard">
+                <div id="img-box">
+                  <div class="bigx">
+                    <p>x</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="mastfoot">
                 <div class="inner">
-                    <i class="demo-icon icon-linkedin-circled"><a href="https://www.linkedin.com/in/christopherwmartin/">&#xf302;</a></i>
-                    <i class="demo-icon icon-github-circled-1"><a href="https://github.com/kayjitsu/Rithm-Website">&#xf300;</a></i>
+                    <i class="demo-icon icon-linkedin-circled"><a target="_blank" href="https://www.linkedin.com/in/christopherwmartin/">&#xf302;</a></i>
+                    <i class="demo-icon icon-github-circled-1"><a target="_blank" href="https://github.com/kayjitsu/Rithm-Website">&#xf300;</a></i>
                     <i class="demo-icon icon-facebook-circled"><a target="_blank" href="https://www.facebook.com/vibetribe415/">&#xf301;</a></i>
                     <p style="margin-top: 25px; margin-bottom: 0;" class="text-sm-center">&copy 2019 sensedev</p>
                 </div>
@@ -89,6 +110,6 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="js/meme.js"></script>
   </body>
 </html>
