@@ -18,13 +18,14 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="../cover.css" rel="stylesheet">
+    <link href="memory.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,18 +44,17 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand" id="navtitle"><a href="index.html">Chris Martin</a></h3>
+              <h3 class="masthead-brand" id="navtitle"><a href="../index.html">Chris Martin</a></h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="about.html">About</a></li>
-                  <li><a href="vibetribe.html">Vibe Tribe</a></li>
+                  <li class="active"><a href="../about.html">About</a></li>
+                  <li><a href="../vibetribe.html">Vibe Tribe</a></li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="meme.html">Meme Generator</a>
-                      <a class="dropdown-item" href="memory/memory.html">Memory</a>
+                      <a class="dropdown-item" href="../meme.html">Meme Generator</a>
                       <!-- <div class="dropdown-divider"></div>
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming soon</a>
                       <a class="dropdown-item" href="#">Something else here</a> -->
@@ -68,18 +68,19 @@
           <div class="inner cover">
             <div class="container">
               <div class="row">
-                  <div class="col-sm">
-                    <h2 class="text-left">About me</h2>
-                    <p class="text-left">I'm Chris and I live in San Francisco. I love music, design & sports. Working with others
-                      towards a common goal is <i>the best</i>.
-                    </p>
-                    <p class='text-left'><a target='_blank' href='img/Christopher Martin.pdf'>Resume available here</a>.</p>
-                  </div>
-                  <div class="col-sm">
-                    <img class="img-fluid" src="img/chris.png" alt="Chris Martin">
-                  </div>
+                <div class="col" id="startdiv">
+                  <h2>Memory</h2>
+                    <a href="#" class="btn btn-lg btn-default" id="start">Get started</a>
+                    <img class="card" src="gifs/gifa.webp">
+                    <br>
+                    <img class="card" src="gifs/gifb.webp">
+                    <img class="card" src="gifs/gifa.webp">
+                    <br>
+                    <img class="card" src="gifs/gifb.webp">
+                    <img class="card" src='gifs/card.png'><img class='card' src='gifs/card.png'>
                 </div>
               </div>
+            </div>
           </div>
 
           <div class="mastfoot">
@@ -103,5 +104,6 @@
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="memory.js"></script>
   </body>
 </html>
