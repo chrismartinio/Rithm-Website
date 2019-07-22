@@ -82,7 +82,7 @@ p.highscore {
 .row {
   justify-content: space-around;
   max-width: 700px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 .card-outer-center {
   border-radius: 2px;
