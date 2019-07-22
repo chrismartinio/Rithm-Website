@@ -1,19 +1,7 @@
-<!doctype html>
-<html>
-<head>
-...
-<meta name="manifest" content='{
-  "name": "Example",
-  "url": "/start.html",
-  "mode": "standalone",
-  "icons": [{
-      "src": "icon/lowres",
-      "density": "1",
-      "width": "64",
-      "type": "image/webp"
-    }, {
-      "src": "icon/hd",
-      "density": "2",
-      "width": "64"
-  }]
-}'>
+{
+  "theme_color": "#ffffff",
+  "background_color": "#303030",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
