@@ -1,294 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../favicon.ico">
 
-    <title>Chris Martin</title>
+<head>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+  <!-- meta tags -->
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <title>Chris Martin</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../cover.css" rel="stylesheet">
-    <link href="memory.css" rel="stylesheet">
-    <link href="../css/fontello.css/" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="../cover.css" rel="stylesheet">
+  <link href="memory.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- <link href="../css/fontello.css" rel="stylesheet"> -->
 
-  <body>
+</head>
 
-    <div class="site-wrapper">
+<body>
+  <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+    <!-- End game content -->
+    <div class="finishline">
+      <div class="finishcontent">
+        <img id="whitex" src="gifs/whitex.png">
+        <h2>Good job!</h2>
+        <img src="gifs/gifz.webp">
+        <p>Your Score: <span class="yourscore"></span></p>
+        <div class="newhighscore"></div>
+        <a href="index.html" class="btn btn-md btn-default">Start over</a>
+      </div>
+    </div>
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
 
-        <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand" id="navtitle"><a href="../index.html">Chris Martin</a></h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="../about.html">About</a></li>
-                  <li><a href="../vibetribe.html">Vibe Tribe</a></li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="../meme.html">Meme Generator</a>
-                      <a class="dropdown-item" href="index.html">Memory</a>
-                      <!-- <div class="dropdown-divider"></div>
+        <!-- Header -->
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand" id="navtitle"><a href="../index.html">Chris Martin</a></h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="../about.html">About</a></li>
+                <li><a href="../vibetribe.html">Vibe Tribe</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../meme.html">Meme Generator</a>
+                    <a class="dropdown-item" href="index.html">Memory</a>
+                    <!-- <div class="dropdown-divider"></div>
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming soon</a>
                       <a class="dropdown-item" href="#">Something else here</a> -->
-                    </div>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </div>
-
-          <div class="inner cover">
-            <div class="container">
-                    <h2 class="memory">Memory 
-                        <i class="demo-icon icon-github-circled-1" style="float:right; margin-top: 5px; margin-right: 80px; font-size: 100%"><a target="_blank" href="https://github.com/kayjitsu/Rithm-Website/tree/master/memory">&#xf300;</a></i>
-                        <i class="demo-icon icon-cw" style="float:right; margin-top: 5px; margin-right: 0px; font-size: 100%"><a target="_blank" href="index.html">&#xe800;</a></i>
-                    </h2>
-                    
-                    <hr class="memory">
-              <div class="d-flex justify-content-center" id="memory">
-                  
-                <div class="row">
-                  <div class="col">
-                    <div class="card">
-                      <div class="front">
-                        <img class="card" src="gifs/card.png">
-                      </div>
-                      <div class="back">
-                      </div>
-                    </div>
-                    <div class="card">
-                        <div class="front">
-                            <img class="card" src="gifs/card.png">
-                        </div>
-                        <div class="back">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="front">
-                            <img class="card" src="gifs/card.png">
-                        </div>
-                        <div class="back">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="front">
-                            <img class="card" src="gifs/card.png">
-                        </div>
-                        <div class="back">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="front">
-                            <img class="card" src="gifs/card.png">
-                        </div>
-                        <div class="back">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                      <div class="card">
-                          <div class="front">
-                              <img class="card" src="gifs/card.png">
-                          </div>
-                          <div class="back">
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                  </div>
-                  <div class="col">
-                      <div class="card">
-                          <div class="front">
-                              <img class="card" src="gifs/card.png">
-                          </div>
-                          <div class="back">
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="center">
-                                <div class='center1'><h4>Ready</h4></div>
-                                <div class='center2'><h4>Go!</h4></div>
-                                <div class='center3' id='circle'><img src="gifs/circle.png"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                  </div>
-                  <div class="col">
-                      <div class="card">
-                          <div class="front">
-                              <img class="card" src="gifs/card.png">
-                          </div>
-                          <div class="back">
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                  </div>
-                  <div class="col">
-                      <div class="card">
-                          <div class="front">
-                              <img class="card" src="gifs/card.png">
-                          </div>
-                          <div class="back">
-                          </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="front">
-                                <img class="card" src="gifs/card.png">
-                            </div>
-                            <div class="back">
-                            </div>
-                        </div>
-                  </div>
-               </div>
-              </div>
-           </div>
-          </div>
-
-          <div class="mastfoot">
-              <div class="inner">
-                  <i class="demo-icon icon-linkedin-circled"><a target="_blank" href="https://www.linkedin.com/in/christopherwmartin/">&#xf302;</a></i>
-                  <i class="demo-icon icon-github-circled-1"><a target="_blank" href="https://github.com/kayjitsu/Rithm-Website">&#xf300;</a></i>
-                  <i class="demo-icon icon-facebook-circled"><a target= "_blank" href="https://www.facebook.com/vibetribe415/">&#xf301;</a></i>
-                  <p style="margin-top: 25px; margin-bottom: 0;" class="text-sm-center">&copy 2019 sensedev</p>
-              </div>
-            </div>
-
         </div>
 
-      </div>
+        <!-- Body -->
+        <div class="inner cover">
+          <div class="container">
+            <h2 class="memory">Memory
+              <p class="highscore">(Your high score: <span class="highscore"></span>)</p>
+              <i class="icon-github-circled-1 demo-icon" id="giticon"><a title="" data-toggle="tooltip"
+                  data-original-title="Project repo" data-placement="top" target="_blank"
+                  href="https://github.com/kayjitsu/Rithm-Website/tree/master/memory">&#xf300;</a></i>
+              <i class="demo-icon icon-cw" style="font-size: 100%;" id="giticon"><a href="index.html" title=""
+                  data-toggle="tooltip" data-original-title="Start over">&#xe800;</a></i>
+            </h2>
+            <hr class="memory">
 
-    </div>
+            <!-- First row -->
+            <div class="row">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Bootstrap core JavaScript
+            <!-- Second row -->
+            <div class="row">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third row -->
+            <div class="row">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Center tile -->
+              <div class="card-outer">
+                <div class="center">
+                  <div class='center1'>
+                    <h4>Ready</h4>
+                  </div>
+                  <div class='center2'>
+                    <h4>Go!</h4>
+                  </div>
+                  <div class='center3' id='circle'>
+                    <img src="gifs/circle.png">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth row -->
+            <div class="row">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth row -->
+            <div class="row">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="front">
+                    <img class="card" src="gifs/card.png">
+                  </div>
+                  <div class="back">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="mastfoot">
+          <div class="inner">
+            <i class="demo-icon icon-linkedin-circled"><a target="_blank"
+                href="https://www.linkedin.com/in/christopherwmartin/">&#xf302;</a></i>
+            <i class="demo-icon icon-github-circled-1"><a target="_blank"
+                href="https://github.com/kayjitsu/Rithm-Website">&#xf300;</a></i>
+            <i class="demo-icon icon-facebook-circled"><a target="_blank"
+                href="https://www.facebook.com/vibetribe415/">&#xf301;</a></i>
+            <p style="margin-top: 25px; margin-bottom: 0;" class="text-sm-center">&copy 2019 sensedev</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-     <!-- Placed at the end of the document so the pages load faster -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <script src="memory.js"></script>
-  </body>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+        <script src="memory.js"></script>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

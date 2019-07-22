@@ -253,7 +253,7 @@ html {
   text-decoration: none;
 }
 h3 a {
-  color: rgba(255,255,255,.82);
+  color: #b8b8b8;
 }
 h3 a:hover {
   text-decoration: none;
@@ -317,7 +317,7 @@ a:hover {
 .btn-default {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: rgba(255,255,255,.82);
+  background-color: #b8b8b8;
 }
 .btn-default:hover,
 .btn-default:focus {
