@@ -199,7 +199,7 @@ html {
 }
 
 .demo-icon a {
-  color: rgba(255,255,255,.82);
+  color: #c4c4c4;
 }
 
 .demo-icon {
@@ -253,7 +253,7 @@ html {
   text-decoration: none;
 }
 h3 a {
-  color: #b8b8b8;
+  color: #c4c4c4;
 }
 h3 a:hover {
   text-decoration: none;
@@ -275,7 +275,7 @@ p a:hover {
   border-bottom: 1px solid white;
 }
 p {
-  color: #b8b8b8;
+  color: #c4c4c4;
 }
 
 
@@ -319,13 +319,15 @@ a:hover {
 /* Custom default button */
 .btn-default {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #b8b8b8;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  text-shadow: none;
+  background-color: #c4c4c4;
+  font-weight: bold;
 }
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
   background-color: rgba(255,255,255);
 }
 
@@ -337,7 +339,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #303030;
+  background-color: #444444;
   margin: 0;
 }
 body {

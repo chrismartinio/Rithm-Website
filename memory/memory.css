@@ -25,7 +25,7 @@
 }
 .finishline a {
   margin: 10px;
-  background-color: #b8b8b8;
+  background-color: #c4c4c4;
 }
 .finishcontent {
   background-color: #202020;
@@ -50,7 +50,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  color: #b8b8b8;
+  color: #c4c4c4;
 }
 #whitex:hover {
   color: white;
@@ -244,7 +244,7 @@ p.highscore {
   font-size: 32px;
   margin-top: 20px;
   transition: .2s;
-  color: rgba(255, 255, 255, 0.64);
+  color: #ffffff;
 }
 h5.count {
   transition: all .3s;
@@ -269,7 +269,7 @@ h5.count {
 }
 
 .demo-icon a { 
-  color: #b8b8b8;
+  color: #c4c4c4;
 }
 .demo-icon {
 font-family: "fontello";
